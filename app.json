@@ -1,0 +1,81 @@
+{
+  "expo": {
+    "name": "Spruce Inlay",
+    "slug": "spruce-kybit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": [
+      "android"
+    ],
+    "icon": "./assets/icons/app-icon.png",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/key-art/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#1a120c"
+    },
+    "android": {
+      "package": "com.sprucekybit.spruceinlay",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.VIBRATE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/adaptive-foreground.png",
+        "backgroundImage": "./assets/icons/adaptive-background.png",
+        "backgroundColor": "#1a120c"
+      },
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "com.google.android.gms.permission.AD_ID"
+      ],
+      "allowBackup": true
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "buildToolsVersion": "36.0.0",
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "enablePngCrunchInReleaseBuilds": true,
+            "usesCleartextTraffic": false
+          }
+        }
+      ],
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "PORTRAIT_UP"
+        }
+      ],
+      "./plugins/withLocalWeb",
+      "./plugins/withReleaseHardening"
+    ],
+    "assetBundlePatterns": [
+      "assets/**/*"
+    ],
+    "extra": {
+      "gameSlug": "inlay",
+      "offlineFirst": true,
+      "company": "SPRUCE KYBIT",
+      "eas": {
+        "projectId": "2237f4e9-bc5c-46e2-9668-2e89d62ae5e5"
+      }
+    },
+    "owner": "894-895"
+  }
+}
